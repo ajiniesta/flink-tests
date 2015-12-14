@@ -29,7 +29,9 @@ public class WordCount {
 	
 	public static class Tokenizer implements FlatMapFunction<String, Tuple2<String, Integer>> {
 
-	    @Override
+		private static final long serialVersionUID = -3811148956110854775L;
+
+		@Override
 	    public void flatMap(String value, Collector<Tuple2<String, Integer>> out) {
 	        // normalize and split the line
 	        String[] tokens = value.toLowerCase().split("\\W+");
