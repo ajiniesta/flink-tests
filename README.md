@@ -1,2 +1,2 @@
 # flink-tests
-Flink tests
+Flink tests using dataset and datastream API's
